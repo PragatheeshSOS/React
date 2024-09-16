@@ -1,3 +1,5 @@
+import {Loader} from "lucide-react"
+
 const App = () => {
     return(
         <>
@@ -8,6 +10,7 @@ const App = () => {
                 <input type="email" name="" id="" placeholder="Enter Your Email" className="p-3 bg-black w-full text-[#d7354d] font-bold outline-none active: outline-none focus: border-b-4 hover:border-red-600"/>
                 <input type="number" name="" id="" placeholder="Enter Your Number" className="p-3 bg-black w-full text-[#d7354d] font-bold outline-none active: outline-none focus: border-b-4 hover:border-red-600"/>
                 <input type="password" name="" id="" placeholder="Enter Your Password" className="p-3 bg-black w-full text-[#d7354d] font-bold outline-none active: outline-none focus: border-b-4 hover:border-red-600"/>
+                <button type="submit" className="w-full bg-black text-white font-bold"><Loader className="animate-spin"/>Register</button>
             </form>
             </div>
         </div>
