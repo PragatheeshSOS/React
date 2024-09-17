@@ -1,6 +1,17 @@
 import {Loader} from "lucide-react"
 
+import Footer from "./components/Footer";  //MARKDOWN
+import NavBar from "./components/NavBar";  //MARKDOWN
+
 const App = () => {
+
+    const appname = "Footer Data"  //MARKDOWN
+
+    const data = {  //MARKDOWN
+        Appname: "M<MM",  //MARKDOWN
+        Appdata: "INc"//  MARKDOWN
+    }
+
     return(
         <>
         <div className="h-screen flex justify-center items-center bg-black">
@@ -14,8 +25,41 @@ const App = () => {
             </form>
             </div>
         </div>
+
+        <div className="h-screen w-screen flex flex-col justify-start items-center">  //MARKDOWN
+            <NavBar data={data} />  //MARKDOWN
+            <Footer appdata={appname} />  //MARKDOWN
+        </div>  //MARKDOWN
+        
         </>
     )
 }
 
 export default App;
+
+{/*
+
+import Footer from "./components/Footer";
+import NavBar from "./components/NavBar";
+
+const App = () => {
+    const appname = "Footer Data"
+
+    const data = {
+        Appname: "M<MM",
+        Appdata: "INc"
+    }
+
+    return (
+        <>
+        <div className="h-screen w-screen flex flex-col justify-start items-center">
+            <NavBar data={data} />
+            <Footer appdata={appname} />
+        </div>
+        </>
+    )
+}
+
+export default App;
+
+*/}
